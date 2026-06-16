@@ -14,42 +14,42 @@ class DualStreamServer:
             return """
             <!doctype html>
                 <html>
-                <head>
-                <style>
-                    body {
-                        margin: 0;
-                        background: #111;
-                        display: flex;
-                        gap: 10px;
-                        padding: 10px;
-                        height: 100vh;
-                        box-sizing: border-box;
-                    }
+                    <head>
+                        <style>
+                            body {
+                                margin: 0;
+                                background: #111;
+                                display: flex;
+                                gap: 10px;
+                                padding: 10px;
+                                height: 100vh;
+                                box-sizing: border-box;
+                            }
 
-                    .small {
-                        flex: 1;
-                        max-width: 30%;
-                        object-fit: contain;
-                        background: black;
-                    }
+                            .small {
+                                flex: 1;
+                                max-width: 30%;
+                                object-fit: contain;
+                                background: black;
+                            }
 
-                    .hd {
-                        flex: 2.5;
-                        width: 100%;
-                        object-fit: contain;
-                        background: black;
-                    }
+                            .hd {
+                                flex: 2.5;
+                                width: 100%;
+                                object-fit: contain;
+                                background: black;
+                            }
 
-                    img {
-                        height: 100%;
-                    }
-                </style>
-                </head>
+                            img {
+                                height: 100%;
+                            }
+                        </style>
+                    </head>
 
-                <body>
-                    <img class="small" src="/small">
-                    <img class="hd" src="/hd">
-                </body>
+                    <body>
+                        <img class="small" src="/small">
+                        <img class="hd" src="/hd">
+                    </body>
                 </html>
             """
 
@@ -85,7 +85,7 @@ class DualStreamServer:
             ret, jpg = cv2.imencode(
                 ".jpg",
                 frame,
-                [cv2.IMWRITE_JPEG_QUALITY, 100]
+                [cv2.IMWRITE_JPEG_QUALITY, 70]
             )
 
             if not ret:
@@ -114,7 +114,7 @@ class DualStreamServer:
             ret, jpg = cv2.imencode(
                 ".jpg",
                 frame,
-                [cv2.IMWRITE_JPEG_QUALITY, 100]
+                [cv2.IMWRITE_JPEG_QUALITY, 80]
             )
 
             if not ret:
