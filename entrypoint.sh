@@ -1,5 +1,5 @@
 #!/bin/bash
 
-ENTRYPOINT="src/dual_signal_entrypoint.py"
+ENTRYPOINT="src/entrypoint_pose_estimation.py"
 
 python3 "$ENTRYPOINT"

@@ -1,3 +1,8 @@
+# Project specific
+src/models/*.onnx
+src/models/*.pt
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
